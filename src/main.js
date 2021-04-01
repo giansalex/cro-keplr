@@ -113,5 +113,5 @@ window.onload = async () => {
     const offlineSigner = window.getOfflineSigner(chainId);
     const accounts = await offlineSigner.getAccounts();
 
-    document.getElementById("address").append(accounts[0].address);
+    document.getElementById("address").textContent = accounts[0].address;
 };
