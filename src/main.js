@@ -1,5 +1,3 @@
-const { defaultBech32Config } = require("@chainapsis/cosmosjs/core/bech32Config");
-
 window.onload = async () => {
     // Keplr extension injects the wallet provider that is compatible with chainapsis's cosmosJS.
     // You can get this wallet provider from `window.cosmosJSWalletProvider` after load event.
@@ -54,7 +52,14 @@ window.onload = async () => {
                     //   bech32PrefixConsAddr: string;
                     //   bech32PrefixConsPub: string;
                     // }
-                    bech32Config: defaultBech32Config("cro", "cncl", "", "", ""),
+                    bech32Config: {
+                        bech32PrefixAccAddr: "cro",
+                        bech32PrefixAccPub: "cropub",
+                        bech32PrefixValAddr: "crocncl",
+                        bech32PrefixValPub: "crocnclpub",
+                        bech32PrefixConsAddr: "crocnclcons",
+                        bech32PrefixConsPub: "crocnclconspub"
+                    },
                     // List of all coin/tokens used in this chain.
                     currencies: [{
                         // Coin denomination to be displayed to the user.
