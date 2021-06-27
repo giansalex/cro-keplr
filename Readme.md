@@ -2,6 +2,8 @@
 
 Integrate [Crypto.org Chain](https://crypto.org/) with [Keplr Wallet](https://keplr.app/).
 
+[Keplr official support to crypto.org chain](https://wallet.keplr.app/#/crypto-org/stake)
+
 ## Install
 
 - In keplr, choose account for cro address.
