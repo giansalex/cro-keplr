@@ -101,7 +101,7 @@ window.onload = async () => {
                         average: 0.03,
                         high: 0.04
                     },
-                    features: ["stargate"]
+                    features: ["stargate", "ibc-transfer", "no-legacy-stdTx", "ibc-go"]
                 });
             } catch {
                 alert("Failed to suggest the chain");
